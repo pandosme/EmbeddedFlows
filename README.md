@@ -7,7 +7,8 @@ An application that stores detected objects paths to a MongoDB.  The typical use
 * Dwell Heatmap
 * Forensic search
 * Counting
-Your application queires and process the data in the database. 
+
+Your application (whatever that may be) queires and process the data from the database.
 
 ### Prerequisite
 * Axis Camera
