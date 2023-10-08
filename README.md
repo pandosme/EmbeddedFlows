@@ -1,5 +1,5 @@
-# EmbeddedFlows
-Application flows to be installed for Node-RED running [Node-RED Installer](https://pandosme.github.io/acap/node-red/2023/09/12/nodered-acap.html) in Axis Cameras.  
+# Embedded Flows for Axis Devices
+Application flows to be imported into Node-RED running [Node-RED Installer](https://pandosme.github.io/acap/node-red/2023/09/12/nodered-acap.html) in Axis Cameras.  
 
 ## Path Flow Heatmap MongoDB
 An application that stores detected objects paths to a MongoDB.
