@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - db:/data/db      
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    links:
+      - mongo
+    environment:
+      - DB_HOST=mongo
+      - DB_PORT=27017
+
+volumes:
+  db:  
+ 
