@@ -45,7 +45,7 @@
         ],
         "x": 74,
         "y": 459,
-        "w": 892,
+        "w": 902,
         "h": 322
     },
     {
@@ -106,7 +106,7 @@
         "type": "Objects",
         "z": "62cccda6ee749e9e",
         "g": "a755a35f8a388a95",
-        "version": "2",
+        "version": "1",
         "output": "3",
         "classFilter": "-1",
         "confidence": "10",
@@ -264,14 +264,14 @@
                 "t": "set",
                 "p": "user",
                 "pt": "msg",
-                "to": "nodered",
+                "to": "root",
                 "tot": "str"
             },
             {
                 "t": "set",
                 "p": "password",
                 "pt": "msg",
-                "to": "rednode",
+                "to": "pass",
                 "tot": "str"
             }
         ],
