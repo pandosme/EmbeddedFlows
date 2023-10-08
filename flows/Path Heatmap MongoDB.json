@@ -127,7 +127,7 @@
         "type": "function",
         "z": "62cccda6ee749e9e",
         "g": "a755a35f8a388a95",
-        "name": "insert",
+        "name": "Set name",
         "func": "msg.payload.device = global.get(\"device\").serial;\nmsg.payload.name = flow.get(\"device\").hostname || flow.get(\"device\").name;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -135,7 +135,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
+        "x": 500,
         "y": 80,
         "wires": [
             [
@@ -294,13 +294,13 @@
         "z": "62cccda6ee749e9e",
         "g": "a755a35f8a388a95",
         "mongodb": "",
-        "name": "",
+        "name": "Insert",
         "collection": "path",
         "payonly": true,
         "upsert": false,
         "multi": false,
         "operation": "store",
-        "x": 640,
+        "x": 630,
         "y": 80,
         "wires": []
     },
@@ -611,10 +611,10 @@
         "z": "62cccda6ee749e9e",
         "g": "20178b619707e095",
         "mongodb": "",
-        "name": "",
+        "name": "Query",
         "collection": "path",
         "operation": "find",
-        "x": 440,
+        "x": 430,
         "y": 260,
         "wires": [
             [
