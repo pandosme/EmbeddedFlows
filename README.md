@@ -18,7 +18,7 @@ Your application (whatever that may be) queires and process the data from the da
 ### Installation
 Assumed that have the prerequisite...
 * Import the [MongoDB Node](node-red-node-mongodb) into Node-RED via Menu | Manage Palette
-* Copy [Path Flow Heatmap MongoDB](https://github.com/pandosme/EmbeddedFlows/raw/main/flows/Path%20Heatmap%20MongoDB.json) and import the flow via Menu | Import.
+* Copy the flow [Path Heatmap.json](https://github.com/pandosme/EmbeddedFlows/raw/main/flows/Path%20Heatmap.json) and import the flow via Menu | Import.
 * Configure the MongoDB nodes to point to your MongoDB
 * Deploy and go to the Node-RED Dashboard http://camera-ip:1880/ui
     
