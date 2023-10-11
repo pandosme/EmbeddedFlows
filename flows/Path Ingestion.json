@@ -1,1 +1,1853 @@
-
+[
+    {
+        "id": "7426aa0278eae0d9",
+        "type": "tab",
+        "label": "Path Ingestion",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "effc314f38c7bcd5",
+        "type": "group",
+        "z": "7426aa0278eae0d9",
+        "name": "Initialization",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "699dbfc6a05619d7",
+            "c082d8a671a8b194",
+            "ab2a9494840c63af",
+            "14065ef488056194",
+            "cb5ea9a7e9d9472d",
+            "acb766e2f1d25a28",
+            "c7cb933b2eb32337",
+            "d35388127721d55c",
+            "f0120b2edc86212c",
+            "434ec97561e5af25",
+            "858acf788f615261",
+            "8099965e45ea43e4",
+            "788cdb297e3e48fb",
+            "92ee893433e6240e",
+            "ee6e6873f00385ab",
+            "0d9b6132fb7f290b",
+            "ac5dbeac0d297210",
+            "cf9bb3c7df367929",
+            "c7ec3e46c4e659e0",
+            "abb7a449ec108bb0",
+            "1a408483dd48df17",
+            "d8e62c284ec9668c",
+            "e1daf036e10a2389",
+            "6e8fbdbc05eb29d7",
+            "3e9be499a9629be4",
+            "369dab514ed38dd1",
+            "7f3e5e98d09cedaa",
+            "faced60456accc01",
+            "f15b020a534da1dd",
+            "7729459049c321ee"
+        ],
+        "x": 104,
+        "y": 659,
+        "w": 1002,
+        "h": 402
+    },
+    {
+        "id": "3384116422ef74bd",
+        "type": "group",
+        "z": "7426aa0278eae0d9",
+        "name": "Data Ingestion",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#e3f3d3",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "bde6bfed1f34dfec",
+            "a14f67075937fe6b",
+            "560e4bc2d0a18632",
+            "29c1aab52fb49fdb",
+            "c4f3044bdcc0d60a",
+            "494bb9e6978aeb48",
+            "e6e74e36a29ce379",
+            "e9b27e2bf7bc8e11",
+            "3a8c4570dda89575"
+        ],
+        "x": 94,
+        "y": 39,
+        "w": 692,
+        "h": 182
+    },
+    {
+        "id": "cd1a8c84ee776f08",
+        "type": "group",
+        "z": "7426aa0278eae0d9",
+        "name": "Dashboard",
+        "style": {
+            "stroke": "#000000",
+            "fill": "#bfdbef",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "4ffc423eaa9ddca6",
+            "ad97cd25c637152e",
+            "0bd55d4228906b8f",
+            "0e580b09f69d2298",
+            "c95326a79f1d8823",
+            "c905c558d5e8b0fa",
+            "a74985e0af702209",
+            "b89cd04a4004de09",
+            "5a15dce0c5d0bd81",
+            "b4b2e9619fae0d9e",
+            "887de737e57b2f9f",
+            "4fdeba8e7a1002f5",
+            "35088087db9efc86",
+            "d096151c4aa5f624",
+            "df544c5a84b544f7",
+            "27c13a2205a88ff0",
+            "f1919b5d180c1845",
+            "711c6fc6cf4c53a3",
+            "901e7acbbae50fce",
+            "ef25629c742345de",
+            "1956a4ded6b8d719",
+            "26e5491cebd0b381",
+            "b159b540662edb09",
+            "b5386c6e78133f6b",
+            "969618341d2ed434"
+        ],
+        "x": 94,
+        "y": 279,
+        "w": 1172,
+        "h": 322
+    },
+    {
+        "id": "bde6bfed1f34dfec",
+        "type": "Objects",
+        "z": "7426aa0278eae0d9",
+        "g": "3384116422ef74bd",
+        "version": "1",
+        "output": "3",
+        "classFilter": "-1",
+        "confidence": "10",
+        "rotation": "0",
+        "cog": "0",
+        "predictions": "0",
+        "idle": "0",
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "560e4bc2d0a18632"
+            ]
+        ]
+    },
+    {
+        "id": "a14f67075937fe6b",
+        "type": "function",
+        "z": "7426aa0278eae0d9",
+        "g": "3384116422ef74bd",
+        "name": "Set name",
+        "func": "msg.topic = \"path\";\nmsg.payload.device = flow.get(\"device\").serial;\nmsg.payload.name = flow.get(\"name\") || flow.get(\"device\").hostname || flow.get(\"device\").name;\n\nvar d = new Date(msg.payload.timestamp);\nmsg.payload.localTime = d.getFullYear() + '-';\nmsg.payload.localTime += (\"00\" + (d.getMonth() + 1)).slice(-2) + '-';\nmsg.payload.localTime += (\"00\" + d.getDay()).slice(-2) + ' ';\nmsg.payload.localTime += (\"00\" + d.getHours()).slice(-2) + ':';\nmsg.payload.localTime += (\"00\" + d.getMinutes()).slice(-2) + ':';\nmsg.payload.localTime += (\"00\" + d.getSeconds()).slice(-2);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 80,
+        "wires": [
+            [
+                "e9b27e2bf7bc8e11",
+                "29c1aab52fb49fdb"
+            ]
+        ]
+    },
+    {
+        "id": "560e4bc2d0a18632",
+        "type": "function",
+        "z": "7426aa0278eae0d9",
+        "g": "3384116422ef74bd",
+        "name": "Filter",
+        "func": "//Filter minimum distance\nvar distance = flow.get(\"distance\") || 0;\nif( msg.payload.distance < distance)  \n    return;\n\n\n//Filter minimum age\nvar age = flow.get(\"age\") || 0;\nif( msg.payload.age < age)  \n    return;\n\n//Filter object class type\nvar classes= flow.get(\"classes\");\nvar ignoreClass = true;\nclasses.forEach(function(element) {\n    if( element === msg.payload.class)\n        ignoreClass = false;\n});\nif(ignoreClass)\n    return;\n\n//Filter object passed Area Of Intrest\nvar aoi = flow.get(\"aoi\") ||null;\nif( aoi ) {\n    var ignore = true;\n    msg.payload.path.forEach(function(position) {\n        if (ignore && \n            position.x >= aoi.x1 && \n            position.x <= aoi.x2 &&\n            position.y >= aoi.y1 &&\n            position.y <= aoi.y2)\n                ignore = false;\n    });\n    if( ignore )\n        return;\n}\n\n//All filters passed\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 80,
+        "wires": [
+            [
+                "a14f67075937fe6b"
+            ]
+        ]
+    },
+    {
+        "id": "699dbfc6a05619d7",
+        "type": "Axis device",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "",
+        "preset": "8851e1ed423632f9",
+        "action": "Device Info",
+        "cgi": "",
+        "data": "",
+        "options": "",
+        "filename": "",
+        "x": 610,
+        "y": 940,
+        "wires": [
+            [
+                "ab2a9494840c63af"
+            ]
+        ]
+    },
+    {
+        "id": "c082d8a671a8b194",
+        "type": "inject",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 700,
+        "wires": [
+            [
+                "14065ef488056194",
+                "acb766e2f1d25a28",
+                "0d9b6132fb7f290b",
+                "8099965e45ea43e4",
+                "788cdb297e3e48fb",
+                "cf9bb3c7df367929",
+                "3e9be499a9629be4",
+                "faced60456accc01"
+            ]
+        ]
+    },
+    {
+        "id": "ab2a9494840c63af",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "device",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "14065ef488056194",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "Authentication",
+        "rules": [
+            {
+                "t": "set",
+                "p": "address",
+                "pt": "msg",
+                "to": "localhost",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "user",
+                "pt": "msg",
+                "to": "root",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "password",
+                "pt": "msg",
+                "to": "pass",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 940,
+        "wires": [
+            [
+                "699dbfc6a05619d7"
+            ]
+        ]
+    },
+    {
+        "id": "4ffc423eaa9ddca6",
+        "type": "ui_button",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "Query",
+        "group": "4473a130848da3dd",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Show Last 24 hours",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 320,
+        "wires": [
+            [
+                "ad97cd25c637152e"
+            ]
+        ]
+    },
+    {
+        "id": "ad97cd25c637152e",
+        "type": "function",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "Query",
+        "func": "msg.payload = {\n    device: flow.get(\"device\").serial || \"Undefined\",\n    timestamp: {\n        $gte: new Date().getTime() - (24 * 3600 * 1000)\n    }\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 320,
+        "wires": [
+            [
+                "0bd55d4228906b8f"
+            ]
+        ]
+    },
+    {
+        "id": "0e580b09f69d2298",
+        "type": "ui_template",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "group": "435b7010110d82aa",
+        "name": "Heatmap",
+        "order": 6,
+        "width": "16",
+        "height": "16",
+        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n\n<div id=\"{{'view_'+$id}}\" style=\"width:800px; height:450px;\">\n  <div style=\"width:100%; height:100%; position:relative\">\n    <img id=\"{{'image_'+$id}}\" src=\"\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n    <canvas id=\"{{'canvas_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n  </div>\n</div>\n\n\n<script>\n  var ctx = null;\nvar imageWidth = 800;\nvar imageHeight = 450;\nvar strength = 0.5;\nvar pathList = [];\nvar selectArea = null;\nvar aoi = null;\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n\n    if( selectArea )\n        selectArea.setOptions({ hide: true });\n    selectArea = null;        \n}\n\nfunction setupImage( scope, data ) {\n    var rotation = data.rotation || 0;\n    var aspect = data.aspect || \"16:9\";\n    imageWidth = 800;  //Default for 16:9\n    imageHeight = 450;\n\n    if(aspect === \"1:1\")\n        imageHeight = 800;\n\n    if(aspect === \"4:3\")\n        imageHeight = 600;\n\n    //Setup aspect ration\n    if(rotation === \"Portrait\" ) {\n        var temp = imageWidth;\n        imageHeight = imageWidth;\n        imageWidth = temp;\n    }\n\n    $(\"#view_\"+scope.$id).css(\"width\", imageWidth + \"px\");\n    $(\"#view_\"+scope.$id).css(\"height\", imageHeight+\"px\");\n\n    if( data.hasOwnProperty(\"image\") && data.image )\n        $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64,\" + data.image);\n    else\n        $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64, \");\n        \n    var canvas = document.getElementById(\"canvas_\"+scope.$id);\n    ctx = canvas.getContext(\"2d\");\n}\n\nfunction drawPath( data ) {\n    if(!ctx)\n        return;\n\n    var first = data.path[0];\n    var last = data.path[data.path.length-1];\n\n    ctx.globalAlpha = strength;\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#00FF00';\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';\n    ctx.moveTo(first.x, first.y );\n    ctx.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n    // ctx.fillText(data.class, first.x, first.y - 10 );\n    ctx.stroke();\n\n    ctx.beginPath();\n    ctx.strokeStyle = '#FFFF00';\n    ctx.moveTo(data.path[0].x, data.path[0].y );\n    for( var i = 1; i < data.path.length; i++ )\n        ctx.lineTo(data.path[i].x,data.path[i].y ); ctx.lineTo(last.x,last.y );\n    ctx.stroke(); ctx.beginPath();\n    ctx.lineWidth=3;\n    ctx.strokeStyle='#FF0000';\n    ctx.moveTo(last.x, last.y );\n    ctx.arc(last.x, last.y, 3, 0, 2 * Math.PI); ctx.stroke();\n}\n\n\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if( !msg || !msg.topic  )\n            return;\n        console.log(msg.topic);\n\n        switch( msg.topic ) {\n        case \"image\":\n            ClearCanvas();\n            setupImage(scope,msg.payload);\n            break;\n\n        case \"path\":\n            drawPath( msg.payload );\n            break;\n\n        case \"singlePath\":\n            ClearCanvas();\n            drawPath( msg.payload );\n            break;\n\n        case \"paths\":\n            ClearCanvas();\n            pathList = msg.payload;\n            msg.payload.forEach(function(path){\n                drawPath( path );\n            });\n            break;\n\n        case \"strength\":\n            ClearCanvas();\n            strength = (parseInt(msg.payload) / 100.0 ) * 0.5;\n            pathList.forEach( function(path) {\n                drawPath( path );\n            });\n            break;\n\n        case \"reset\":\n            ClearCanvas();\n            break;\n\n        case \"aoi\":\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            if( typeof msg.payload !== \"object\" )\n                return;\n            aoi = msg.payload.id || \"None\";\n            selectArea = $(\"#image_\"+scope.$id).imgAreaSelect({\n                x1: parseInt((msg.payload.x1 / 1000) * imageWidth),\n                y1: parseInt((msg.payload.y1 / 1000) * imageHeight),\n                x2: parseInt((msg.payload.x2 / 1000) * imageWidth),\n                y2: parseInt((msg.payload.y2 / 1000) * imageHeight),\n                minHeight: 20,\n                minWidth: 20,\n                handles: true,\n                enable:true,movable:true,resizable:true,show:true,\n                instance: true,\n                onSelectEnd: function( image, area ) {\n                var box = {\n                    id: aoi,\n                    x1: parseInt((area.x1 / imageWidth) * 1000),\n                    x2: parseInt((area.x2 / imageWidth) * 1000),\n                    y1: parseInt((area.y1 / imageHeight) * 1000),\n                    y2: parseInt((area.y2 / imageHeight) * 1000)\n                }\n                scope.send({topic:aoi||\"none\",payload:box});\n                }\n            });\n            selectArea.setOptions({show: true});\n            break;\n            case \"birth\":\n            case \"death\":\n                aoi = msg.payload.id || \"None\";\n                if(!selectArea) {\n                    selectArea = $(\"#image_\"+scope.$id).imgAreaSelect( {\n                        x1: parseInt(msg.payload.x1 / 1000 * imageWidth),\n                        x2: parseInt(msg.payload.x2 / 1000 * imageWidth),\n                        y1: parseInt(msg.payload.y1 / 1000 * imageHeight),\n                        y2: parseInt(msg.payload.y2 / 1000 * imageHeight),\n                        show: true, hide:false, minHeight: 5, minWidth: 5, handles: true, movable: true, resizable: true, instance:true,\n                        onSelectEnd: function( image, area ) {\n                            var area = {\n                                id: aoi,\n                                x1: parseInt((area.x1/imageWidth) * 1000),\n                                x2: parseInt((area.x2/imageWidth) * 1000),\n                                y1: parseInt((area.y1/imageHeight) * 1000),\n                                y2: parseInt((area.y2/imageHeight) * 1000)\n                            }\n                            scope.send({\n                                topic: aoi,\n                                payload: area\n                            });\n                        }\n                    });\n                }\n                selectArea.setSelection(\n                    parseInt(msg.payload.x1 / 1000 * imageWidth),\n                    parseInt(msg.payload.y1 / 1000 * imageHeight),\n                    parseInt(msg.payload.x2 / 1000 * imageWidth),\n                    parseInt(msg.payload.y2 / 1000 * imageHeight)\n                );\n                selectArea.setOptions({ show: true });\n            break;\n\t\t}\n    });\n})(scope);\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 920,
+        "y": 320,
+        "wires": [
+            [
+                "5a15dce0c5d0bd81"
+            ]
+        ]
+    },
+    {
+        "id": "c95326a79f1d8823",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "paths",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 320,
+        "wires": [
+            [
+                "0e580b09f69d2298",
+                "ef25629c742345de"
+            ]
+        ]
+    },
+    {
+        "id": "cb5ea9a7e9d9472d",
+        "type": "ui_slider",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "",
+        "label": "Strength",
+        "tooltip": "",
+        "group": "435b7010110d82aa",
+        "order": 5,
+        "width": "13",
+        "height": "1",
+        "passthru": true,
+        "outs": "end",
+        "topic": "strength",
+        "topicType": "str",
+        "min": "5",
+        "max": "100",
+        "step": "0.5",
+        "className": "",
+        "x": 600,
+        "y": 700,
+        "wires": [
+            [
+                "c7cb933b2eb32337"
+            ]
+        ]
+    },
+    {
+        "id": "acb766e2f1d25a28",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "strength",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "strength",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 700,
+        "wires": [
+            [
+                "cb5ea9a7e9d9472d"
+            ]
+        ]
+    },
+    {
+        "id": "c7cb933b2eb32337",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "strength",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "strength",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900,
+        "y": 700,
+        "wires": [
+            [
+                "ac5dbeac0d297210"
+            ]
+        ]
+    },
+    {
+        "id": "d35388127721d55c",
+        "type": "ui_numeric",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "",
+        "label": "Min Age (seconds)",
+        "tooltip": "",
+        "group": "1bf956165b21c55d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": "0.5",
+        "className": "",
+        "x": 630,
+        "y": 860,
+        "wires": [
+            [
+                "434ec97561e5af25"
+            ]
+        ]
+    },
+    {
+        "id": "f0120b2edc86212c",
+        "type": "ui_numeric",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "",
+        "label": "Min Distance (% of view)",
+        "tooltip": "",
+        "group": "1bf956165b21c55d",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "step": "10",
+        "className": "",
+        "x": 650,
+        "y": 900,
+        "wires": [
+            [
+                "858acf788f615261"
+            ]
+        ]
+    },
+    {
+        "id": "434ec97561e5af25",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "age",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "858acf788f615261",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "distance",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8099965e45ea43e4",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "flow.age",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "age",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 860,
+        "wires": [
+            [
+                "d35388127721d55c"
+            ]
+        ]
+    },
+    {
+        "id": "788cdb297e3e48fb",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "flow.distance",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "distance",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 900,
+        "wires": [
+            [
+                "f0120b2edc86212c"
+            ]
+        ]
+    },
+    {
+        "id": "92ee893433e6240e",
+        "type": "ui_dropdown",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "Class selection",
+        "label": "Classes",
+        "tooltip": "",
+        "place": "Select detection",
+        "group": "1bf956165b21c55d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": true,
+        "options": [
+            {
+                "label": "Human",
+                "value": "Human",
+                "type": "str"
+            },
+            {
+                "label": "Car",
+                "value": "Car",
+                "type": "str"
+            },
+            {
+                "label": "Truck",
+                "value": "Truck",
+                "type": "str"
+            },
+            {
+                "label": "Bus",
+                "value": "Bus",
+                "type": "str"
+            },
+            {
+                "label": "Motorcycle",
+                "value": "Motorcycle",
+                "type": "str"
+            },
+            {
+                "label": "Other vehicle type",
+                "value": "Vehicle",
+                "type": "str"
+            },
+            {
+                "label": "Face",
+                "value": "Face",
+                "type": "str"
+            },
+            {
+                "label": "License plate",
+                "value": "License plate",
+                "type": "str"
+            },
+            {
+                "label": "Unknown type",
+                "value": "Object",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 620,
+        "y": 820,
+        "wires": [
+            [
+                "ee6e6873f00385ab"
+            ]
+        ]
+    },
+    {
+        "id": "ee6e6873f00385ab",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "flow.classes",
+        "rules": [
+            {
+                "t": "set",
+                "p": "classes",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0d9b6132fb7f290b",
+        "type": "function",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "Classes",
+        "func": "msg.options = [ \"Human\", \"Car\", \"Truck\", \"Bus\", \"Motorcycle\", \"Vehicle\", \"Face\", \"License plate\", \"Object\" ];\nif( !flow.get(\"classes\") ) {\n    msg.payload = [ \"Human\", \"Car\", \"Truck\", \"Bus\", \"Motorcycle\", \"Vehicle\" ];\n} else {\n    msg.payload = flow.get(\"classes\");\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 820,
+        "wires": [
+            [
+                "92ee893433e6240e"
+            ]
+        ]
+    },
+    {
+        "id": "c905c558d5e8b0fa",
+        "type": "ui_button",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "",
+        "group": "1bf956165b21c55d",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Set area objects must pass",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 400,
+        "wires": [
+            [
+                "a74985e0af702209"
+            ]
+        ]
+    },
+    {
+        "id": "a74985e0af702209",
+        "type": "function",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "aoi",
+        "func": "msg.topic = \"aoi\";\nmsg.payload = flow.get(\"aoi\") || {\n    id: \"aoi\",\n    x1: 200,\n    y1: 200,\n    x2: 800,\n    y2: 800\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 400,
+        "wires": [
+            [
+                "0e580b09f69d2298"
+            ]
+        ]
+    },
+    {
+        "id": "b89cd04a4004de09",
+        "type": "ui_button",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "",
+        "group": "1bf956165b21c55d",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Save",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "aoi",
+        "topicType": "str",
+        "x": 670,
+        "y": 440,
+        "wires": [
+            [
+                "0e580b09f69d2298"
+            ]
+        ]
+    },
+    {
+        "id": "5a15dce0c5d0bd81",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "aoi",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1090,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac5dbeac0d297210",
+        "type": "link out",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "b4b2e9619fae0d9e"
+        ],
+        "x": 1055,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "b4b2e9619fae0d9e",
+        "type": "link in",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "link in 1",
+        "links": [
+            "ac5dbeac0d297210",
+            "e9b27e2bf7bc8e11",
+            "b159b540662edb09"
+        ],
+        "x": 635,
+        "y": 360,
+        "wires": [
+            [
+                "0e580b09f69d2298"
+            ]
+        ]
+    },
+    {
+        "id": "c4f3044bdcc0d60a",
+        "type": "inject",
+        "z": "7426aa0278eae0d9",
+        "g": "3384116422ef74bd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 00 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "494bb9e6978aeb48"
+            ]
+        ]
+    },
+    {
+        "id": "494bb9e6978aeb48",
+        "type": "function",
+        "z": "7426aa0278eae0d9",
+        "g": "3384116422ef74bd",
+        "name": "Data Retention",
+        "func": "var days = 30;\n//Change above to desired number of days to retain data\n\nmsg.payload = {\n    device: flow.get(\"device\").serial || \"Undefined\",\n    timestamp: {\n        $lte: new Date().getTime() - (days * 24 * 3600 * 1000)\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 180,
+        "wires": [
+            [
+                "e6e74e36a29ce379"
+            ]
+        ]
+    },
+    {
+        "id": "887de737e57b2f9f",
+        "type": "ui_button",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "",
+        "group": "435b7010110d82aa",
+        "order": 4,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Refresh image",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 520,
+        "wires": [
+            [
+                "1956a4ded6b8d719"
+            ]
+        ]
+    },
+    {
+        "id": "4fdeba8e7a1002f5",
+        "type": "Camera",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "resolution": "1280x720",
+        "overlay": "no",
+        "output": "base64",
+        "x": 620,
+        "y": 520,
+        "wires": [
+            [
+                "35088087db9efc86"
+            ]
+        ]
+    },
+    {
+        "id": "35088087db9efc86",
+        "type": "function",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "Image",
+        "func": "msg.topic = \"image\";\nvar image = msg.payload;\nmsg.payload = flow.get(\"camera\");\nmsg.payload.image = image;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 520,
+        "wires": [
+            [
+                "0e580b09f69d2298",
+                "df544c5a84b544f7"
+            ]
+        ]
+    },
+    {
+        "id": "df544c5a84b544f7",
+        "type": "function",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "Update",
+        "func": "msg.query = {\n    device: flow.get(\"device\").serial || \"Undefined\"\n}\n\nmsg.payload = {\n    device: flow.get(\"device\").serial || \"Undefined\",\n    name: flow.get(\"device\").hostname || flow.get(\"device\").name,\n    timestamp: new Date().getTime(),\n    rotation: msg.payload.rotation,\n    aspect: msg.payload.aspect,\n    image: msg.payload.image\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 520,
+        "wires": [
+            [
+                "d096151c4aa5f624",
+                "b5386c6e78133f6b"
+            ]
+        ]
+    },
+    {
+        "id": "27c13a2205a88ff0",
+        "type": "inject",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "Every hour",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 560,
+        "wires": [
+            [
+                "1956a4ded6b8d719"
+            ]
+        ]
+    },
+    {
+        "id": "f1919b5d180c1845",
+        "type": "ui_ui_control",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "",
+        "events": "all",
+        "x": 180,
+        "y": 480,
+        "wires": [
+            [
+                "711c6fc6cf4c53a3"
+            ]
+        ]
+    },
+    {
+        "id": "711c6fc6cf4c53a3",
+        "type": "function",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "Tab",
+        "func": "if( msg.payload !== \"change\")\n    return;\nif( msg.name !== \"Path heatmap\")\n    return\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 480,
+        "wires": [
+            [
+                "1956a4ded6b8d719"
+            ]
+        ]
+    },
+    {
+        "id": "e6e74e36a29ce379",
+        "type": "mongodb out",
+        "z": "7426aa0278eae0d9",
+        "g": "3384116422ef74bd",
+        "mongodb": "",
+        "name": "Remove",
+        "collection": "path",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 660,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d096151c4aa5f624",
+        "type": "mongodb out",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "mongodb": "",
+        "name": "Update",
+        "collection": "image",
+        "payonly": true,
+        "upsert": true,
+        "multi": false,
+        "operation": "update",
+        "x": 1090,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "0bd55d4228906b8f",
+        "type": "mongodb in",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "mongodb": "",
+        "name": "Query",
+        "collection": "path",
+        "operation": "find",
+        "x": 410,
+        "y": 320,
+        "wires": [
+            [
+                "c95326a79f1d8823"
+            ]
+        ]
+    },
+    {
+        "id": "c7ec3e46c4e659e0",
+        "type": "ui_dropdown",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "Aspect",
+        "label": "Image aspect",
+        "tooltip": "",
+        "place": "Select aspect",
+        "group": "1bf956165b21c55d",
+        "order": 7,
+        "width": "6",
+        "height": "1",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "16:9",
+                "value": "16:9",
+                "type": "str"
+            },
+            {
+                "label": "4:3",
+                "value": "4:3",
+                "type": "str"
+            },
+            {
+                "label": "1:1",
+                "value": "1:1",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "aspect",
+        "topicType": "str",
+        "className": "",
+        "x": 780,
+        "y": 980,
+        "wires": [
+            [
+                "abb7a449ec108bb0"
+            ]
+        ]
+    },
+    {
+        "id": "abb7a449ec108bb0",
+        "type": "function",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "flow.camera",
+        "func": "var camera = flow.get(\"camera\");\nswitch(msg.topic) {\n    case \"aspect\":\n        camera.aspect = msg.payload;\n        break;\n    case \"rotation\":\n        camera.rotation = msg.payload;\n        break;\n}\n\nflow.set(\"camera\",camera);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 980,
+        "wires": [
+            [
+                "6e8fbdbc05eb29d7"
+            ]
+        ]
+    },
+    {
+        "id": "cf9bb3c7df367929",
+        "type": "function",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "flow.camera",
+        "func": "msg.payload = flow.get(\"camera\") || {\n    aspect: \"16:9\",\n    rotation: \"Landscape\",\n    image: \"\"\n}    \nflow.set(\"camera\",msg.payload);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 980,
+        "wires": [
+            [
+                "1a408483dd48df17",
+                "e1daf036e10a2389"
+            ]
+        ]
+    },
+    {
+        "id": "1a408483dd48df17",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.aspect",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 980,
+        "wires": [
+            [
+                "c7ec3e46c4e659e0"
+            ]
+        ]
+    },
+    {
+        "id": "d8e62c284ec9668c",
+        "type": "ui_dropdown",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "Rotation",
+        "label": "Image rotation",
+        "tooltip": "",
+        "place": "Select rotation",
+        "group": "1bf956165b21c55d",
+        "order": 8,
+        "width": "6",
+        "height": "1",
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Landscape",
+                "value": "Landscape",
+                "type": "str"
+            },
+            {
+                "label": "Portrait",
+                "value": "Portrait",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "rotation",
+        "topicType": "str",
+        "className": "",
+        "x": 780,
+        "y": 1020,
+        "wires": [
+            [
+                "abb7a449ec108bb0"
+            ]
+        ]
+    },
+    {
+        "id": "e1daf036e10a2389",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.rotation",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 1020,
+        "wires": [
+            [
+                "d8e62c284ec9668c"
+            ]
+        ]
+    },
+    {
+        "id": "901e7acbbae50fce",
+        "type": "link in",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "link in 2",
+        "links": [
+            "6e8fbdbc05eb29d7"
+        ],
+        "x": 355,
+        "y": 560,
+        "wires": [
+            [
+                "1956a4ded6b8d719"
+            ]
+        ]
+    },
+    {
+        "id": "6e8fbdbc05eb29d7",
+        "type": "link out",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "901e7acbbae50fce"
+        ],
+        "x": 1065,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "ef25629c742345de",
+        "type": "ui_table",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "group": "4473a130848da3dd",
+        "name": "",
+        "order": 0,
+        "width": "14",
+        "height": "16",
+        "columns": [
+            {
+                "field": "localTime",
+                "title": "Time",
+                "width": "30%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "class",
+                "title": "Class",
+                "width": "18%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "confidence",
+                "title": "Confidence",
+                "width": "18%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "age",
+                "title": "Age",
+                "width": "16%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "distance",
+                "title": "DIstance",
+                "width": "18%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 910,
+        "y": 360,
+        "wires": [
+            [
+                "26e5491cebd0b381"
+            ]
+        ]
+    },
+    {
+        "id": "1956a4ded6b8d719",
+        "type": "function",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "Resolution",
+        "func": "var camera = flow.get(\"camera\");\nif(!camera)\n    return;\n\nswitch( camera.aspect ) {\n    case \"4:3\":\n        msg.resolution = \"800x600\"\n        break;\n    case \"1:1\":\n        msg.resolution = \"800x800\"\n        break;\n    case \"16:9\":\n    default:\n        msg.resolution = \"1280x720\"\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 520,
+        "wires": [
+            [
+                "4fdeba8e7a1002f5"
+            ]
+        ]
+    },
+    {
+        "id": "e9b27e2bf7bc8e11",
+        "type": "link out",
+        "z": "7426aa0278eae0d9",
+        "g": "3384116422ef74bd",
+        "name": "Path",
+        "mode": "link",
+        "links": [
+            "b4b2e9619fae0d9e",
+            "9cb301453293eccd"
+        ],
+        "x": 635,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "26e5491cebd0b381",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "singlePath",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1100,
+        "y": 360,
+        "wires": [
+            [
+                "b159b540662edb09"
+            ]
+        ]
+    },
+    {
+        "id": "b159b540662edb09",
+        "type": "link out",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "b4b2e9619fae0d9e"
+        ],
+        "x": 1225,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "3e9be499a9629be4",
+        "type": "function",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "name",
+        "func": "msg.payload = flow.get(\"name\") || \"\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 740,
+        "wires": [
+            [
+                "369dab514ed38dd1"
+            ]
+        ]
+    },
+    {
+        "id": "369dab514ed38dd1",
+        "type": "ui_text_input",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "",
+        "label": "Name",
+        "tooltip": "",
+        "group": "1bf956165b21c55d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 590,
+        "y": 740,
+        "wires": [
+            [
+                "7f3e5e98d09cedaa"
+            ]
+        ]
+    },
+    {
+        "id": "7f3e5e98d09cedaa",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "flow.name",
+        "rules": [
+            {
+                "t": "set",
+                "p": "name",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "faced60456accc01",
+        "type": "function",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "Confidence",
+        "func": "msg.payload = flow.get(\"confidence\") || 10;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 780,
+        "wires": [
+            [
+                "f15b020a534da1dd"
+            ]
+        ]
+    },
+    {
+        "id": "f15b020a534da1dd",
+        "type": "ui_dropdown",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "Confidence selection",
+        "label": "Min confidence",
+        "tooltip": "",
+        "place": "Select detection",
+        "group": "1bf956165b21c55d",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "10",
+                "value": 10,
+                "type": "num"
+            },
+            {
+                "label": "20",
+                "value": 20,
+                "type": "num"
+            },
+            {
+                "label": "30",
+                "value": 30,
+                "type": "num"
+            },
+            {
+                "label": "40",
+                "value": 40,
+                "type": "num"
+            },
+            {
+                "label": "50",
+                "value": 50,
+                "type": "num"
+            },
+            {
+                "label": "60",
+                "value": 60,
+                "type": "num"
+            },
+            {
+                "label": "70",
+                "value": 70,
+                "type": "num"
+            },
+            {
+                "label": "80",
+                "value": 80,
+                "type": "num"
+            },
+            {
+                "label": "90",
+                "value": 90,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 640,
+        "y": 780,
+        "wires": [
+            [
+                "7729459049c321ee"
+            ]
+        ]
+    },
+    {
+        "id": "7729459049c321ee",
+        "type": "change",
+        "z": "7426aa0278eae0d9",
+        "g": "effc314f38c7bcd5",
+        "name": "flow.confidence",
+        "rules": [
+            {
+                "t": "set",
+                "p": "confidence",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "29c1aab52fb49fdb",
+        "type": "mongodb out",
+        "z": "7426aa0278eae0d9",
+        "g": "3384116422ef74bd",
+        "mongodb": "",
+        "name": "Insert",
+        "collection": "path",
+        "payonly": true,
+        "upsert": false,
+        "multi": false,
+        "operation": "store",
+        "x": 670,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b5386c6e78133f6b",
+        "type": "link out",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "Image",
+        "mode": "link",
+        "links": [
+            "a15093f2faccc1f5"
+        ],
+        "x": 1065,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "3a8c4570dda89575",
+        "type": "comment",
+        "z": "7426aa0278eae0d9",
+        "g": "3384116422ef74bd",
+        "name": "path",
+        "info": "",
+        "x": 710,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "969618341d2ed434",
+        "type": "comment",
+        "z": "7426aa0278eae0d9",
+        "g": "cd1a8c84ee776f08",
+        "name": "image",
+        "info": "",
+        "x": 1130,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "8851e1ed423632f9",
+        "type": "Device Access",
+        "name": "localhost",
+        "address": "localhost",
+        "protocol": "http"
+    },
+    {
+        "id": "4473a130848da3dd",
+        "type": "ui_group",
+        "name": "Table",
+        "tab": "91a8f5573038bf31",
+        "order": 4,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "435b7010110d82aa",
+        "type": "ui_group",
+        "name": "Heatmap",
+        "tab": "91a8f5573038bf31",
+        "order": 1,
+        "disp": false,
+        "width": "16",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1bf956165b21c55d",
+        "type": "ui_group",
+        "name": "Settings",
+        "tab": "91a8f5573038bf31",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "91a8f5573038bf31",
+        "type": "ui_tab",
+        "name": "Path Ingestion",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
