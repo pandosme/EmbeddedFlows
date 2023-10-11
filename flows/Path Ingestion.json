@@ -1058,7 +1058,7 @@
         "z": "7426aa0278eae0d9",
         "g": "cd1a8c84ee776f08",
         "name": "Update",
-        "func": "msg.query = {\n    device: flow.get(\"device\").serial || \"Undefined\"\n}\n\nmsg.payload = {\n    device: flow.get(\"device\").serial || \"Undefined\",\n    name: flow.get(\"device\").hostname || flow.get(\"device\").name,\n    timestamp: new Date().getTime(),\n    rotation: msg.payload.rotation,\n    aspect: msg.payload.aspect,\n    image: msg.payload.image\n}\n\n\nreturn msg;",
+        "func": "msg.query = {\n    device: flow.get(\"device\").serial || \"Undefined\"\n}\n\nmsg.payload = {\n    device: flow.get(\"device\").serial || \"Undefined\",\n    name: flow.get(\"name\") || flow.get(\"device\").hostname || flow.get(\"device\").name,\n    timestamp: new Date().getTime(),\n    rotation: msg.payload.rotation,\n    aspect: msg.payload.aspect,\n    image: msg.payload.image\n}\n\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
