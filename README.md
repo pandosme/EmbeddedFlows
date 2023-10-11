@@ -1,11 +1,11 @@
 # Embedded Flows for Axis Devices
 Application flows to be imported into Node-RED running [Node-RED Installer](https://pandosme.github.io/acap/node-red/2023/09/12/nodered-acap.html) in Axis Cameras.  
 
-## Path Flow Heatmap MongoDB
-An application that stores detected objects paths to a MongoDB.  The typical use cases are:
+## Path Ingestion
+An application that stores detected object paths to a MongoDB.  Typical use cases are:
+* Forensic search
 * Flow Heatmap
 * Dwell Heatmap
-* Forensic search
 * Counting
 
 Your application (whatever that may be) queires and process the data from the database.
@@ -18,7 +18,7 @@ Your application (whatever that may be) queires and process the data from the da
 ### Installation
 Assumed that have the prerequisite...
 * Import the [MongoDB Node](node-red-node-mongodb) into Node-RED via Menu | Manage Palette
-* Copy the flow [Path Heatmap.json](https://github.com/pandosme/EmbeddedFlows/raw/main/flows/Path%20Heatmap.json) and import the flow via Menu | Import.
+* Copy the flow [Path Heatmap.json](https://github.com/pandosme/EmbeddedFlows/raw/main/flows/Path%20Ingestion.json) and import the flow via Menu | Import.
 * Configure the MongoDB nodes to point to your MongoDB
 * Deploy and go to the Node-RED Dashboard http://camera-ip:1880/ui
     
