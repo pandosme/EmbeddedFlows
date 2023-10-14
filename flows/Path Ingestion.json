@@ -1,6 +1,6 @@
 [
     {
-        "id": "b0c955e05631ecea",
+        "id": "e7e00ee978d3ba17",
         "type": "tab",
         "label": "Path Ingestion",
         "disabled": false,
@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "17dff4f1d7924cbe",
+        "id": "cd9a131423c46d3d",
         "type": "group",
-        "z": "b0c955e05631ecea",
+        "z": "e7e00ee978d3ba17",
         "name": "Initialization",
         "style": {
             "stroke": "#000000",
@@ -19,49 +19,46 @@
             "color": "#000000"
         },
         "nodes": [
-            "de8ad89c77169b44",
-            "d2a34a94c09aae7e",
-            "01a8998e92a69eea",
-            "399f28156ae083a0",
-            "660bc6e97f85eaef",
-            "d0f591ebb119b947",
-            "b9227fff6e8bc387",
-            "d2cb8edbd00c0678",
-            "f53fca800ceff183",
-            "14f452d650bdfa36",
-            "1f1d51b4ac224e3a",
-            "163ffa95a39a125d",
-            "1febc6b6ac0f6b93",
-            "707f9f52ebb647da",
-            "b8d27a4e6dc90a06",
-            "f5d44c558b2fa753",
-            "e5d437aafb53699e",
-            "c82271b028db166c",
-            "170342a2c3566121",
-            "79dde0da2846fcb5",
-            "84d519c18d031b46",
-            "0475b8800ca9d45a",
-            "fad719b6dc16669c",
-            "453ded03a67edda9",
-            "ae6a171358bb928f",
-            "c867081da2da296b",
-            "08ceaa878c40e8e2",
-            "297a9a4f2cc028bc",
-            "ad534730a187d197",
-            "09f27795409780cc",
-            "9c393dc205d6b947",
-            "94f31cb4ba85aeb9",
-            "a5cff03ce044ba62"
+            "ef9894706ad02e0b",
+            "d82b83f43fa51008",
+            "5d9c04fc4bd19903",
+            "8a7713f55081d140",
+            "d2666e7dc9fd19e4",
+            "305d751beed0fb75",
+            "acd5e94d6e601bd2",
+            "1da8b74e8dd85804",
+            "88325b2f69f348e7",
+            "f2bba8c8622cbd9a",
+            "8f43a040405ad1bf",
+            "bf9a90279602f114",
+            "a1a1317554ec9f42",
+            "b03c36ad180ab7b3",
+            "d7bab374b2fc3594",
+            "af336bbaeb09bc1e",
+            "0e4252bd65a5df23",
+            "d8bd419441bad68f",
+            "ed4aa8e7b7dc9b02",
+            "880e5ac7cb738de5",
+            "67f18e799dff5199",
+            "2dfd43a206c929d6",
+            "b98bb15092ccfb27",
+            "fc0b1ab7563f0da7",
+            "a1ea8f059a34decd",
+            "d756fc37a9bdfdbf",
+            "f0bc18daf3fb8b9c",
+            "35376f79b2d3a2e8",
+            "37840460d19f7213",
+            "330956ac1634cf73"
         ],
         "x": 94,
         "y": 659,
         "w": 1012,
-        "h": 442
+        "h": 402
     },
     {
-        "id": "5372695db9acf68f",
+        "id": "6ec657ea73f13536",
         "type": "group",
-        "z": "b0c955e05631ecea",
+        "z": "e7e00ee978d3ba17",
         "name": "Data Ingestion",
         "style": {
             "stroke": "#000000",
@@ -70,15 +67,14 @@
             "color": "#000000"
         },
         "nodes": [
-            "3a5c770f5c5ffaba",
-            "e598a976fb74c0ba",
-            "9e67af390b428f5c",
-            "ea2197cb6dc8e677",
-            "f1ddeb66fdad0941",
-            "95ee84309983433b",
-            "167b1df7d8cd1ca7",
-            "29bae567bdcbd3f0",
-            "ddd56fc67f199e8c"
+            "99a5b6eae33524d0",
+            "10b478f124e0c377",
+            "e200ce052518f004",
+            "025326aff71002bd",
+            "273965d4c36db0da",
+            "f3f71084a066bce3",
+            "ee9ef2438615bdfd",
+            "dcfabc372e3dc197"
         ],
         "x": 94,
         "y": 39,
@@ -86,9 +82,9 @@
         "h": 182
     },
     {
-        "id": "4724ef833182e4e6",
+        "id": "0e2d668daf0278ba",
         "type": "group",
-        "z": "b0c955e05631ecea",
+        "z": "e7e00ee978d3ba17",
         "name": "Dashboard",
         "style": {
             "stroke": "#000000",
@@ -97,63 +93,59 @@
             "color": "#000000"
         },
         "nodes": [
-            "d51ecf90dc5ae52b",
-            "46147f63869ff29e",
-            "fc8c9a9a30886365",
-            "b71f684718f25d80",
-            "f90b4a11a2dbba5a",
-            "4b8b3d42a5e5666b",
-            "1e45ff835d4e2c4f",
-            "1a49c1a2c3da127a",
-            "71c2d34c9379c29d",
-            "ed7ef0971c526d9e",
-            "7d16effbabaf7d69",
-            "44c2d52f18d1a5c4",
-            "41e9bc8c1070cf51",
-            "a0b46d933046d4ac",
-            "bf15e014720a8544",
-            "9edf9b93b3d1e2cf",
-            "e50595a50f5dcee0",
-            "7c2b4fbbc9605370",
-            "79fceb8c854b03a1",
-            "ca4ce8ea6736b676",
-            "f0067c319935f753",
-            "1e4f4a6529c926a3",
-            "a04a5aa29bba6026",
-            "63545c5c0348f243",
-            "0d39d4fcf809f59c"
+            "6142a0504e14e1a6",
+            "fcc5886e4aadd570",
+            "3b4bcf8cb5d85e97",
+            "f031690982b2c931",
+            "92a43414ebe67856",
+            "ef7a23510f1b8312",
+            "0eb13c442166987d",
+            "d4022565d5ef248b",
+            "c04894acbcc047c3",
+            "c434fc4038a69c01",
+            "080a22203e2e06ea",
+            "cf7c96a415037ce5",
+            "f01e249eb3657960",
+            "c060942c8eb1324d",
+            "c7d73f9bfebb6a64",
+            "97a0add6ed4182ff",
+            "5f3e417dce2a731e",
+            "fb642bec0ba2f1cd",
+            "c1ead8be70d916cd",
+            "0454fa8ce9e33224",
+            "4be7183bedd5dbef"
         ],
         "x": 94,
         "y": 279,
-        "w": 1172,
-        "h": 342
+        "w": 1192,
+        "h": 322
     },
     {
-        "id": "3a5c770f5c5ffaba",
+        "id": "99a5b6eae33524d0",
         "type": "Objects",
-        "z": "b0c955e05631ecea",
-        "g": "5372695db9acf68f",
+        "z": "e7e00ee978d3ba17",
+        "g": "6ec657ea73f13536",
         "version": "1",
         "output": "3",
         "classFilter": "-1",
-        "confidence": "10",
-        "rotation": "0",
+        "confidence": "30",
+        "rotation": "270",
         "cog": "0",
         "predictions": "0",
-        "idle": "0",
+        "idle": "1",
         "x": 200,
         "y": 80,
         "wires": [
             [
-                "9e67af390b428f5c"
+                "e200ce052518f004"
             ]
         ]
     },
     {
-        "id": "e598a976fb74c0ba",
+        "id": "10b478f124e0c377",
         "type": "function",
-        "z": "b0c955e05631ecea",
-        "g": "5372695db9acf68f",
+        "z": "e7e00ee978d3ba17",
+        "g": "6ec657ea73f13536",
         "name": "Set name",
         "func": "msg.topic = \"path\";\nmsg.payload.device = flow.get(\"device\").serial;\nmsg.payload.name = flow.get(\"name\") || flow.get(\"device\").hostname || flow.get(\"device\").name;\n\nvar d = new Date(msg.payload.timestamp);\nmsg.payload.localTime = d.getFullYear() + '-';\nmsg.payload.localTime += (\"00\" + (d.getMonth() + 1)).slice(-2) + '-';\nmsg.payload.localTime += (\"00\" + d.getDay()).slice(-2) + ' ';\nmsg.payload.localTime += (\"00\" + d.getHours()).slice(-2) + ':';\nmsg.payload.localTime += (\"00\" + d.getMinutes()).slice(-2) + ':';\nmsg.payload.localTime += (\"00\" + d.getSeconds()).slice(-2);\nreturn msg;",
         "outputs": 1,
@@ -162,41 +154,41 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 520,
+        "x": 560,
         "y": 80,
         "wires": [
             [
-                "29bae567bdcbd3f0",
-                "ea2197cb6dc8e677"
+                "dcfabc372e3dc197",
+                "025326aff71002bd"
             ]
         ]
     },
     {
-        "id": "9e67af390b428f5c",
+        "id": "e200ce052518f004",
         "type": "function",
-        "z": "b0c955e05631ecea",
-        "g": "5372695db9acf68f",
+        "z": "e7e00ee978d3ba17",
+        "g": "6ec657ea73f13536",
         "name": "Filter",
-        "func": "//Filter minimum distance\nvar distance = flow.get(\"distance\") || 0;\nif( msg.payload.distance < distance)  \n    return;\n\n//Filter minimum confidence\nvar confidence = flow.get(\"confidence\") || 10;\nif (msg.payload.confidence < confidence )\n    return;\n\n//Filter minimum age\nvar age = flow.get(\"age\") || 0;\nif( msg.payload.age < age)  \n    return;\n\n//Filter object class type\nvar classes= flow.get(\"classes\");\nvar ignoreClass = true;\nclasses.forEach(function(element) {\n    if( element === msg.payload.class)\n        ignoreClass = false;\n});\nif(ignoreClass)\n    return;\n\n//Filter object passed Area Of Intrest\nvar aoi = flow.get(\"aoi\") ||null;\nif( aoi ) {\n    var ignore = true;\n    msg.payload.path.forEach(function(position) {\n        if (ignore && \n            position.x >= aoi.x1 && \n            position.x <= aoi.x2 &&\n            position.y >= aoi.y1 &&\n            position.y <= aoi.y2)\n                ignore = false;\n    });\n    if( ignore )\n        return;\n}\n\n//All filters passed\n\nreturn msg;",
+        "func": "//Filter minimum distance\nvar distance = flow.get(\"distance\") || 0;\nif( msg.payload.distance < distance)  \n    return;\n\n//Filter minimum confidence\nvar confidence = flow.get(\"confidence\") || 10;\nif( msg.payload.confidnece < confidence )\n    return;\n\n//Filter minimum age\nvar age = flow.get(\"age\") || 0;\nif( msg.payload.age < age)  \n    return;\n\n//Filter object class type\nvar classes= flow.get(\"classes\");\nvar ignoreClass = true;\nclasses.forEach(function(element) {\n    if( element === msg.payload.class)\n        ignoreClass = false;\n});\nif(ignoreClass)\n    return;\n\n//Filter object passed Area Of Intrest\nvar aoi = flow.get(\"aoi\") ||null;\nif( aoi ) {\n    var ignore = true;\n    msg.payload.path.forEach(function(position) {\n        if (ignore && \n            position.x >= aoi.x1 && \n            position.x <= aoi.x2 &&\n            position.y >= aoi.y1 &&\n            position.y <= aoi.y2)\n                ignore = false;\n    });\n    if( ignore )\n        return;\n}\n\n//All filters passed\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
+        "x": 410,
         "y": 80,
         "wires": [
             [
-                "e598a976fb74c0ba"
+                "10b478f124e0c377"
             ]
         ]
     },
     {
-        "id": "de8ad89c77169b44",
+        "id": "ef9894706ad02e0b",
         "type": "Axis device",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "",
         "preset": "8851e1ed423632f9",
         "action": "Device Info",
@@ -208,15 +200,15 @@
         "y": 940,
         "wires": [
             [
-                "01a8998e92a69eea"
+                "5d9c04fc4bd19903"
             ]
         ]
     },
     {
-        "id": "d2a34a94c09aae7e",
+        "id": "d82b83f43fa51008",
         "type": "inject",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "",
         "props": [
             {
@@ -238,23 +230,22 @@
         "y": 700,
         "wires": [
             [
-                "399f28156ae083a0",
-                "d0f591ebb119b947",
-                "f5d44c558b2fa753",
-                "163ffa95a39a125d",
-                "1febc6b6ac0f6b93",
-                "c82271b028db166c",
-                "ae6a171358bb928f",
-                "297a9a4f2cc028bc",
-                "94f31cb4ba85aeb9"
+                "8a7713f55081d140",
+                "305d751beed0fb75",
+                "af336bbaeb09bc1e",
+                "bf9a90279602f114",
+                "a1a1317554ec9f42",
+                "d8bd419441bad68f",
+                "a1ea8f059a34decd",
+                "35376f79b2d3a2e8"
             ]
         ]
     },
     {
-        "id": "01a8998e92a69eea",
+        "id": "5d9c04fc4bd19903",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "",
         "rules": [
             {
@@ -277,10 +268,10 @@
         ]
     },
     {
-        "id": "399f28156ae083a0",
+        "id": "8a7713f55081d140",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "Authentication",
         "rules": [
             {
@@ -314,17 +305,17 @@
         "y": 940,
         "wires": [
             [
-                "de8ad89c77169b44"
+                "ef9894706ad02e0b"
             ]
         ]
     },
     {
-        "id": "d51ecf90dc5ae52b",
+        "id": "6142a0504e14e1a6",
         "type": "ui_button",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "Query",
-        "group": "8e38503f85f9bb51",
+        "group": "c503712eb42ad81a",
         "order": 4,
         "width": "3",
         "height": "1",
@@ -343,15 +334,15 @@
         "y": 320,
         "wires": [
             [
-                "46147f63869ff29e"
+                "fcc5886e4aadd570"
             ]
         ]
     },
     {
-        "id": "46147f63869ff29e",
+        "id": "fcc5886e4aadd570",
         "type": "function",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "Query",
         "func": "msg.payload = {\n    device: flow.get(\"device\").serial || \"Undefined\",\n    timestamp: {\n        $gte: new Date().getTime() - (24 * 3600 * 1000)\n    }\n}\n\nreturn msg;\n",
         "outputs": 1,
@@ -364,21 +355,21 @@
         "y": 320,
         "wires": [
             [
-                "fc8c9a9a30886365"
+                "3b4bcf8cb5d85e97"
             ]
         ]
     },
     {
-        "id": "b71f684718f25d80",
+        "id": "f031690982b2c931",
         "type": "ui_template",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
-        "group": "e157e0199999938c",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
+        "group": "45db6a3eb8460311",
         "name": "Heatmap",
         "order": 6,
         "width": "16",
         "height": "16",
-        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n\n<div id=\"{{'view_'+$id}}\" style=\"width:800px; height:450px;\">\n  <div style=\"width:100%; height:100%; position:relative\">\n    <img id=\"{{'image_'+$id}}\" src=\"\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n    <canvas id=\"{{'canvas_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n  </div>\n</div>\n\n\n<script>\n  var ctx = null;\nvar imageWidth = 800;\nvar imageHeight = 450;\nvar strength = 0.5;\nvar pathList = [];\nvar selectArea = null;\nvar aoi = null;\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n\n    if( selectArea )\n        selectArea.setOptions({ hide: true });\n    selectArea = null;        \n}\n\nfunction setupImage( scope, data ) {\n    var rotation = data.rotation || 0;\n    var aspect = data.aspect || \"16:9\";\n    imageWidth = 800;  //Default for 16:9\n    imageHeight = 450;\n\n    if(aspect === \"1:1\")\n        imageHeight = 800;\n\n    if(aspect === \"4:3\")\n        imageHeight = 600;\n\n    //Setup aspect ration\n    if(rotation === \"Portrait\" ) {\n        var temp = imageWidth;\n        imageHeight = imageWidth;\n        imageWidth = temp;\n    }\n\n    $(\"#view_\"+scope.$id).css(\"width\", imageWidth + \"px\");\n    $(\"#view_\"+scope.$id).css(\"height\", imageHeight+\"px\");\n\n    if( data.hasOwnProperty(\"image\") && data.image )\n        $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64,\" + data.image);\n    else\n        $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64, \");\n        \n    var canvas = document.getElementById(\"canvas_\"+scope.$id);\n    ctx = canvas.getContext(\"2d\");\n}\n\nfunction drawPath( data ) {\n    if(!ctx)\n        return;\n\n    var first = data.path[0];\n    var last = data.path[data.path.length-1];\n\n    ctx.globalAlpha = strength;\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#00FF00';\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';\n    ctx.moveTo(first.x, first.y );\n    ctx.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n    // ctx.fillText(data.class, first.x, first.y - 10 );\n    ctx.stroke();\n\n    ctx.beginPath();\n    ctx.strokeStyle = '#FFFF00';\n    ctx.moveTo(data.path[0].x, data.path[0].y );\n    for( var i = 1; i < data.path.length; i++ )\n        ctx.lineTo(data.path[i].x,data.path[i].y ); ctx.lineTo(last.x,last.y );\n    ctx.stroke(); ctx.beginPath();\n    ctx.lineWidth=3;\n    ctx.strokeStyle='#FF0000';\n    ctx.moveTo(last.x, last.y );\n    ctx.arc(last.x, last.y, 3, 0, 2 * Math.PI); ctx.stroke();\n}\n\n\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if( !msg || !msg.topic  )\n            return;\n        console.log(msg.topic);\n\n        switch( msg.topic ) {\n        case \"image\":\n            ClearCanvas();\n            setupImage(scope,msg.payload);\n            break;\n\n        case \"path\":\n            drawPath( msg.payload );\n            break;\n\n        case \"singlePath\":\n            ClearCanvas();\n            drawPath( msg.payload );\n            break;\n\n        case \"paths\":\n            ClearCanvas();\n            pathList = msg.payload;\n            msg.payload.forEach(function(path){\n                drawPath( path );\n            });\n            break;\n\n        case \"strength\":\n            ClearCanvas();\n            strength = (parseInt(msg.payload) / 100.0 ) * 0.5;\n            pathList.forEach( function(path) {\n                drawPath( path );\n            });\n            break;\n\n        case \"reset\":\n            ClearCanvas();\n            break;\n\n        case \"aoi\":\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            if( typeof msg.payload !== \"object\" )\n                return;\n            aoi = msg.payload.id || \"None\";\n            selectArea = $(\"#image_\"+scope.$id).imgAreaSelect({\n                x1: parseInt((msg.payload.x1 / 1000) * imageWidth),\n                y1: parseInt((msg.payload.y1 / 1000) * imageHeight),\n                x2: parseInt((msg.payload.x2 / 1000) * imageWidth),\n                y2: parseInt((msg.payload.y2 / 1000) * imageHeight),\n                minHeight: 20,\n                minWidth: 20,\n                handles: true,\n                enable:true,movable:true,resizable:true,show:true,\n                instance: true,\n                onSelectEnd: function( image, area ) {\n                var box = {\n                    id: aoi,\n                    x1: parseInt((area.x1 / imageWidth) * 1000),\n                    x2: parseInt((area.x2 / imageWidth) * 1000),\n                    y1: parseInt((area.y1 / imageHeight) * 1000),\n                    y2: parseInt((area.y2 / imageHeight) * 1000)\n                }\n                scope.send({topic:aoi||\"none\",payload:box});\n                }\n            });\n            selectArea.setOptions({show: true});\n            break;\n            case \"birth\":\n            case \"death\":\n                aoi = msg.payload.id || \"None\";\n                if(!selectArea) {\n                    selectArea = $(\"#image_\"+scope.$id).imgAreaSelect( {\n                        x1: parseInt(msg.payload.x1 / 1000 * imageWidth),\n                        x2: parseInt(msg.payload.x2 / 1000 * imageWidth),\n                        y1: parseInt(msg.payload.y1 / 1000 * imageHeight),\n                        y2: parseInt(msg.payload.y2 / 1000 * imageHeight),\n                        show: true, hide:false, minHeight: 5, minWidth: 5, handles: true, movable: true, resizable: true, instance:true,\n                        onSelectEnd: function( image, area ) {\n                            var area = {\n                                id: aoi,\n                                x1: parseInt((area.x1/imageWidth) * 1000),\n                                x2: parseInt((area.x2/imageWidth) * 1000),\n                                y1: parseInt((area.y1/imageHeight) * 1000),\n                                y2: parseInt((area.y2/imageHeight) * 1000)\n                            }\n                            scope.send({\n                                topic: aoi,\n                                payload: area\n                            });\n                        }\n                    });\n                }\n                selectArea.setSelection(\n                    parseInt(msg.payload.x1 / 1000 * imageWidth),\n                    parseInt(msg.payload.y1 / 1000 * imageHeight),\n                    parseInt(msg.payload.x2 / 1000 * imageWidth),\n                    parseInt(msg.payload.y2 / 1000 * imageHeight)\n                );\n                selectArea.setOptions({ show: true });\n            break;\n\t\t}\n    });\n})(scope);\n</script>",
+        "format": "<link rel=\"stylesheet\" href=\"/css/imgareaselect-default.css\">\n<script src=\"/js/jquery.imgareaselect.js\"></script>\n\n<div id=\"{{'view_'+$id}}\" style=\"width:800px; height:450px;\">\n  <div style=\"width:100%; height:100%; position:relative\">\n    <img id=\"{{'image_'+$id}}\" src=\"\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\">\n    <canvas id=\"{{'canvas_'+$id}}\" width=\"1000\" height=\"1000\" style=\"width:100%; height:100%; position:absolute; top:0px; left:0px;\"></canvas>\n  </div>\n</div>\n\n\n<script>\n  var ctx = null;\nvar imageWidth = 800;\nvar imageHeight = 450;\nvar strength = 0.5;\nvar pathList = [];\nvar selectArea = null;\nvar aoi = null;\n\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        if( !msg || !msg.topic  )\n            return;\n        console.log(msg.topic);\n\n        switch( msg.topic ) {\n        case \"image\":\n            ClearCanvas();\n            setupImage(scope,msg.payload);\n            break;\n\n        case \"path\":\n            drawPath( msg.payload );\n            break;\n\n        case \"singlePath\":\n            ClearCanvas();\n            drawPath( msg.payload );\n            break;\n\n        case \"paths\":\n            ClearCanvas();\n            pathList = msg.payload;\n            msg.payload.forEach(function(path){\n                drawPath( path );\n            });\n            break;\n\n        case \"strength\":\n            ClearCanvas();\n            strength = (parseInt(msg.payload) / 100.0 ) * 0.5;\n            pathList.forEach( function(path) {\n                drawPath( path );\n            });\n            break;\n\n        case \"reset\":\n            ClearCanvas();\n            break;\n\n        case \"aoi\":\n            if( selectArea ) {\n                selectArea.setOptions({hide: true});\n                selectArea = null;\n            }\n            if( typeof msg.payload !== \"object\" )\n                return;\n            aoi = msg.payload.id || \"None\";\n            selectArea = $(\"#image_\"+scope.$id).imgAreaSelect({\n                x1: parseInt((msg.payload.x1 / 1000) * imageWidth),\n                y1: parseInt((msg.payload.y1 / 1000) * imageHeight),\n                x2: parseInt((msg.payload.x2 / 1000) * imageWidth),\n                y2: parseInt((msg.payload.y2 / 1000) * imageHeight),\n                minHeight: 20,\n                minWidth: 20,\n                handles: true,\n                enable:true,movable:true,resizable:true,show:true,\n                instance: true,\n                onSelectEnd: function( image, area ) {\n                var box = {\n                    id: aoi,\n                    x1: parseInt((area.x1 / imageWidth) * 1000),\n                    x2: parseInt((area.x2 / imageWidth) * 1000),\n                    y1: parseInt((area.y1 / imageHeight) * 1000),\n                    y2: parseInt((area.y2 / imageHeight) * 1000)\n                }\n                scope.send({topic:aoi||\"none\",payload:box});\n                }\n            });\n            selectArea.setOptions({show: true});\n            break;\n            case \"birth\":\n            case \"death\":\n                aoi = msg.payload.id || \"None\";\n                if(!selectArea) {\n                    selectArea = $(\"#image_\"+scope.$id).imgAreaSelect( {\n                        x1: parseInt(msg.payload.x1 / 1000 * imageWidth),\n                        x2: parseInt(msg.payload.x2 / 1000 * imageWidth),\n                        y1: parseInt(msg.payload.y1 / 1000 * imageHeight),\n                        y2: parseInt(msg.payload.y2 / 1000 * imageHeight),\n                        show: true, hide:false, minHeight: 5, minWidth: 5, handles: true, movable: true, resizable: true, instance:true,\n                        onSelectEnd: function( image, area ) {\n                            var area = {\n                                id: aoi,\n                                x1: parseInt((area.x1/imageWidth) * 1000),\n                                x2: parseInt((area.x2/imageWidth) * 1000),\n                                y1: parseInt((area.y1/imageHeight) * 1000),\n                                y2: parseInt((area.y2/imageHeight) * 1000)\n                            }\n                            scope.send({\n                                topic: aoi,\n                                payload: area\n                            });\n                        }\n                    });\n                }\n                selectArea.setSelection(\n                    parseInt(msg.payload.x1 / 1000 * imageWidth),\n                    parseInt(msg.payload.y1 / 1000 * imageHeight),\n                    parseInt(msg.payload.x2 / 1000 * imageWidth),\n                    parseInt(msg.payload.y2 / 1000 * imageHeight)\n                );\n                selectArea.setOptions({ show: true });\n            break;\n\t\t}\n    });\n})(scope);\n\nfunction ClearCanvas() {\n    if(ctx) {\n        ctx.beginPath();\n        ctx.clearRect(0, 0, 1000, 1000 );\n        ctx.stroke();\n    }\n\n    if( selectArea )\n        selectArea.setOptions({ hide: true });\n        selectArea = null;\n    }\n\nfunction setupImage( scope, data ) {\n    var rotation = data.rotation || \"Landscape\";\n    var aspect = data.aspect || \"16:9\";\n    imageWidth = 800; //Default for 16:9\n    imageHeight = 450;\n    videoWidth = 1280; \n    videoHeight = 720;\n\n\n    if(aspect === \"1:1\") {\n        imageHeight = 800;\n        videoWidth = 800; \n        videoHeight = 800;\n    }\n\n    if(aspect === \"4:3\") {\n        imageHeight = 600;\n        videoWidth = 800; \n        videoHeight = 600;\n    }\n\n//Setup aspect ration\n    if(rotation === \"Portrait\" ) {\n        var temp = imageWidth;\n        imageWidth = imageHeight;\n        imageHeight = temp;\n    }\n\n    $(\"#view_\"+scope.$id).css(\"width\", imageWidth + \"px\");\n    $(\"#view_\"+scope.$id).css(\"height\", imageHeight+\"px\");\n\n    if( data.hasOwnProperty(\"image\") && data.image )\n        $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64,\" + data.image);\n    else\n        $(\"#image_\"+scope.$id).attr(\"src\",\"data:image/jpeg;base64, \");\n\n    var canvas = document.getElementById(\"canvas_\"+scope.$id);\n    ctx = canvas.getContext(\"2d\");\n}\n\nfunction drawPath( data ) {\n    if(!ctx)\n        return;\n\n    var first = data.path[0];\n    var last = data.path[data.path.length-1];\n\n    ctx.globalAlpha = strength;\n    ctx.beginPath();\n    ctx.lineWidth = 3;\n    ctx.strokeStyle = '#00FF00';\n    ctx.font = \"30px Arial\";\n    ctx.fillStyle = '#FFFF00';\n    ctx.moveTo(first.x, first.y );\n    ctx.arc(first.x, first.y, 3, 0, 2 * Math.PI);\n// ctx.fillText(data.class, first.x, first.y - 10 );\n    ctx.stroke();\n\n    ctx.beginPath();\n    ctx.strokeStyle = '#FFFF00';\n    ctx.moveTo(data.path[0].x, data.path[0].y );\n    for( var i = 1; i < data.path.length; i++ )\n        ctx.lineTo(data.path[i].x,data.path[i].y ); ctx.lineTo(last.x,last.y );\n    ctx.stroke();\n    ctx.beginPath();\n    ctx.lineWidth=3;\n    ctx.strokeStyle='#FF0000';\n    ctx.moveTo(last.x, last.y );\n    ctx.arc(last.x, last.y, 3, 0, 2 * Math.PI);\n    ctx.stroke();\n}\n\n</script>",
         "storeOutMessages": false,
         "fwdInMessages": false,
         "resendOnRefresh": false,
@@ -388,15 +379,15 @@
         "y": 320,
         "wires": [
             [
-                "71c2d34c9379c29d"
+                "c04894acbcc047c3"
             ]
         ]
     },
     {
-        "id": "f90b4a11a2dbba5a",
+        "id": "92a43414ebe67856",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "",
         "rules": [
             {
@@ -416,20 +407,20 @@
         "y": 320,
         "wires": [
             [
-                "b71f684718f25d80",
-                "ca4ce8ea6736b676"
+                "f031690982b2c931",
+                "fb642bec0ba2f1cd"
             ]
         ]
     },
     {
-        "id": "660bc6e97f85eaef",
+        "id": "d2666e7dc9fd19e4",
         "type": "ui_slider",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "",
         "label": "Strength",
         "tooltip": "",
-        "group": "e157e0199999938c",
+        "group": "45db6a3eb8460311",
         "order": 5,
         "width": "13",
         "height": "1",
@@ -445,15 +436,15 @@
         "y": 700,
         "wires": [
             [
-                "b9227fff6e8bc387"
+                "acd5e94d6e601bd2"
             ]
         ]
     },
     {
-        "id": "d0f591ebb119b947",
+        "id": "305d751beed0fb75",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "strength",
         "rules": [
             {
@@ -473,15 +464,15 @@
         "y": 700,
         "wires": [
             [
-                "660bc6e97f85eaef"
+                "d2666e7dc9fd19e4"
             ]
         ]
     },
     {
-        "id": "b9227fff6e8bc387",
+        "id": "acd5e94d6e601bd2",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "",
         "rules": [
             {
@@ -508,19 +499,19 @@
         "y": 700,
         "wires": [
             [
-                "e5d437aafb53699e"
+                "0e4252bd65a5df23"
             ]
         ]
     },
     {
-        "id": "d2cb8edbd00c0678",
+        "id": "1da8b74e8dd85804",
         "type": "ui_numeric",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "",
         "label": "Min Age (seconds)",
         "tooltip": "",
-        "group": "81c3a7487f122c15",
+        "group": "aa6698f4de177a5f",
         "order": 3,
         "width": 0,
         "height": 0,
@@ -537,19 +528,19 @@
         "y": 860,
         "wires": [
             [
-                "14f452d650bdfa36"
+                "f2bba8c8622cbd9a"
             ]
         ]
     },
     {
-        "id": "f53fca800ceff183",
+        "id": "88325b2f69f348e7",
         "type": "ui_numeric",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "",
         "label": "Min Distance (% of view)",
         "tooltip": "",
-        "group": "81c3a7487f122c15",
+        "group": "aa6698f4de177a5f",
         "order": 4,
         "width": 0,
         "height": 0,
@@ -566,15 +557,15 @@
         "y": 900,
         "wires": [
             [
-                "1f1d51b4ac224e3a"
+                "8f43a040405ad1bf"
             ]
         ]
     },
     {
-        "id": "14f452d650bdfa36",
+        "id": "f2bba8c8622cbd9a",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "",
         "rules": [
             {
@@ -597,10 +588,10 @@
         ]
     },
     {
-        "id": "1f1d51b4ac224e3a",
+        "id": "8f43a040405ad1bf",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "",
         "rules": [
             {
@@ -623,10 +614,10 @@
         ]
     },
     {
-        "id": "163ffa95a39a125d",
+        "id": "bf9a90279602f114",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "flow.age",
         "rules": [
             {
@@ -646,15 +637,15 @@
         "y": 860,
         "wires": [
             [
-                "d2cb8edbd00c0678"
+                "1da8b74e8dd85804"
             ]
         ]
     },
     {
-        "id": "1febc6b6ac0f6b93",
+        "id": "a1a1317554ec9f42",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "flow.distance",
         "rules": [
             {
@@ -674,20 +665,20 @@
         "y": 900,
         "wires": [
             [
-                "f53fca800ceff183"
+                "88325b2f69f348e7"
             ]
         ]
     },
     {
-        "id": "707f9f52ebb647da",
+        "id": "b03c36ad180ab7b3",
         "type": "ui_dropdown",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "Class selection",
         "label": "Classes",
         "tooltip": "",
         "place": "Select detection",
-        "group": "81c3a7487f122c15",
+        "group": "aa6698f4de177a5f",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -748,15 +739,15 @@
         "y": 820,
         "wires": [
             [
-                "b8d27a4e6dc90a06"
+                "d7bab374b2fc3594"
             ]
         ]
     },
     {
-        "id": "b8d27a4e6dc90a06",
+        "id": "d7bab374b2fc3594",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "flow.classes",
         "rules": [
             {
@@ -780,10 +771,10 @@
         ]
     },
     {
-        "id": "f5d44c558b2fa753",
+        "id": "af336bbaeb09bc1e",
         "type": "function",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "Classes",
         "func": "msg.options = [ \"Human\", \"Car\", \"Truck\", \"Bus\", \"Motorcycle\", \"Vehicle\", \"Face\", \"License plate\", \"Object\" ];\nif( !flow.get(\"classes\") ) {\n    msg.payload = [ \"Human\", \"Car\", \"Truck\", \"Bus\", \"Motorcycle\", \"Vehicle\" ];\n} else {\n    msg.payload = flow.get(\"classes\");\n}\n\n\nreturn msg;",
         "outputs": 1,
@@ -796,17 +787,17 @@
         "y": 820,
         "wires": [
             [
-                "707f9f52ebb647da"
+                "b03c36ad180ab7b3"
             ]
         ]
     },
     {
-        "id": "4b8b3d42a5e5666b",
+        "id": "ef7a23510f1b8312",
         "type": "ui_button",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "",
-        "group": "81c3a7487f122c15",
+        "group": "aa6698f4de177a5f",
         "order": 6,
         "width": 0,
         "height": 0,
@@ -825,15 +816,15 @@
         "y": 400,
         "wires": [
             [
-                "1e45ff835d4e2c4f"
+                "0eb13c442166987d"
             ]
         ]
     },
     {
-        "id": "1e45ff835d4e2c4f",
+        "id": "0eb13c442166987d",
         "type": "function",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "aoi",
         "func": "msg.topic = \"aoi\";\nmsg.payload = flow.get(\"aoi\") || {\n    id: \"aoi\",\n    x1: 200,\n    y1: 200,\n    x2: 800,\n    y2: 800\n}\n\nreturn msg;",
         "outputs": 1,
@@ -846,18 +837,18 @@
         "y": 400,
         "wires": [
             [
-                "b71f684718f25d80"
+                "f031690982b2c931"
             ]
         ]
     },
     {
-        "id": "1a49c1a2c3da127a",
+        "id": "d4022565d5ef248b",
         "type": "ui_button",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "",
-        "group": "81c3a7487f122c15",
-        "order": 10,
+        "group": "aa6698f4de177a5f",
+        "order": 9,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -875,15 +866,15 @@
         "y": 440,
         "wires": [
             [
-                "b71f684718f25d80"
+                "f031690982b2c931"
             ]
         ]
     },
     {
-        "id": "71c2d34c9379c29d",
+        "id": "c04894acbcc047c3",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "",
         "rules": [
             {
@@ -906,43 +897,43 @@
         ]
     },
     {
-        "id": "e5d437aafb53699e",
+        "id": "0e4252bd65a5df23",
         "type": "link out",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "link out 1",
         "mode": "link",
         "links": [
-            "ed7ef0971c526d9e"
+            "c434fc4038a69c01"
         ],
         "x": 1055,
         "y": 700,
         "wires": []
     },
     {
-        "id": "ed7ef0971c526d9e",
+        "id": "c434fc4038a69c01",
         "type": "link in",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "link in 1",
         "links": [
-            "e5d437aafb53699e",
-            "29bae567bdcbd3f0",
-            "a04a5aa29bba6026"
+            "0e4252bd65a5df23",
+            "dcfabc372e3dc197",
+            "4be7183bedd5dbef"
         ],
         "x": 635,
         "y": 360,
         "wires": [
             [
-                "b71f684718f25d80"
+                "f031690982b2c931"
             ]
         ]
     },
     {
-        "id": "f1ddeb66fdad0941",
+        "id": "273965d4c36db0da",
         "type": "inject",
-        "z": "b0c955e05631ecea",
-        "g": "5372695db9acf68f",
+        "z": "e7e00ee978d3ba17",
+        "g": "6ec657ea73f13536",
         "name": "",
         "props": [
             {
@@ -964,17 +955,17 @@
         "y": 180,
         "wires": [
             [
-                "95ee84309983433b"
+                "f3f71084a066bce3"
             ]
         ]
     },
     {
-        "id": "95ee84309983433b",
+        "id": "f3f71084a066bce3",
         "type": "function",
-        "z": "b0c955e05631ecea",
-        "g": "5372695db9acf68f",
+        "z": "e7e00ee978d3ba17",
+        "g": "6ec657ea73f13536",
         "name": "Data Retention",
-        "func": "var days = flow.get(\"retention\") || 31;\n//Change above to desired number of days to retain data\n\nmsg.payload = {\n    device: flow.get(\"device\").serial || \"Undefined\",\n    timestamp: {\n        $lte: new Date().getTime() - (days * 24 * 3600 * 1000)\n    }\n}\nreturn msg;",
+        "func": "var days = 30;\n//Change above to desired number of days to retain data\n\nmsg.payload = {\n    device: flow.get(\"device\").serial || \"Undefined\",\n    timestamp: {\n        $lte: new Date().getTime() - (days * 24 * 3600 * 1000)\n    }\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -985,17 +976,17 @@
         "y": 180,
         "wires": [
             [
-                "167b1df7d8cd1ca7"
+                "ee9ef2438615bdfd"
             ]
         ]
     },
     {
-        "id": "7d16effbabaf7d69",
+        "id": "080a22203e2e06ea",
         "type": "ui_button",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "",
-        "group": "e157e0199999938c",
+        "group": "45db6a3eb8460311",
         "order": 4,
         "width": "3",
         "height": "1",
@@ -1014,15 +1005,15 @@
         "y": 520,
         "wires": [
             [
-                "f0067c319935f753"
+                "c1ead8be70d916cd"
             ]
         ]
     },
     {
-        "id": "44c2d52f18d1a5c4",
+        "id": "cf7c96a415037ce5",
         "type": "Camera",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "resolution": "1280x720",
         "overlay": "no",
         "output": "base64",
@@ -1030,15 +1021,15 @@
         "y": 520,
         "wires": [
             [
-                "41e9bc8c1070cf51"
+                "f01e249eb3657960"
             ]
         ]
     },
     {
-        "id": "41e9bc8c1070cf51",
+        "id": "f01e249eb3657960",
         "type": "function",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "Image",
         "func": "msg.topic = \"image\";\nvar image = msg.payload;\nmsg.payload = flow.get(\"camera\");\nmsg.payload.image = image;\nreturn msg;",
         "outputs": 1,
@@ -1051,16 +1042,16 @@
         "y": 520,
         "wires": [
             [
-                "b71f684718f25d80",
-                "bf15e014720a8544"
+                "f031690982b2c931",
+                "c7d73f9bfebb6a64"
             ]
         ]
     },
     {
-        "id": "bf15e014720a8544",
+        "id": "c7d73f9bfebb6a64",
         "type": "function",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "Update",
         "func": "msg.query = {\n    device: flow.get(\"device\").serial || \"Undefined\"\n}\n\nmsg.payload = {\n    device: flow.get(\"device\").serial || \"Undefined\",\n    name: flow.get(\"name\") || flow.get(\"device\").hostname || flow.get(\"device\").name,\n    timestamp: new Date().getTime(),\n    rotation: msg.payload.rotation,\n    aspect: msg.payload.aspect,\n    image: msg.payload.image\n}\n\n\nreturn msg;",
         "outputs": 1,
@@ -1069,20 +1060,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 910,
+        "x": 940,
         "y": 520,
         "wires": [
             [
-                "a0b46d933046d4ac",
-                "63545c5c0348f243"
+                "c060942c8eb1324d"
             ]
         ]
     },
     {
-        "id": "9edf9b93b3d1e2cf",
+        "id": "97a0add6ed4182ff",
         "type": "inject",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "Every hour",
         "props": [
             {
@@ -1100,55 +1090,19 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 210,
+        "x": 220,
         "y": 560,
         "wires": [
             [
-                "f0067c319935f753"
+                "c1ead8be70d916cd"
             ]
         ]
     },
     {
-        "id": "e50595a50f5dcee0",
-        "type": "ui_ui_control",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
-        "name": "",
-        "events": "all",
-        "x": 180,
-        "y": 480,
-        "wires": [
-            [
-                "7c2b4fbbc9605370"
-            ]
-        ]
-    },
-    {
-        "id": "7c2b4fbbc9605370",
-        "type": "function",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
-        "name": "Tab",
-        "func": "if( msg.payload !== \"change\")\n    return;\nif( msg.name !== \"Path heatmap\")\n    return\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 330,
-        "y": 480,
-        "wires": [
-            [
-                "f0067c319935f753"
-            ]
-        ]
-    },
-    {
-        "id": "167b1df7d8cd1ca7",
+        "id": "ee9ef2438615bdfd",
         "type": "mongodb out",
-        "z": "b0c955e05631ecea",
-        "g": "5372695db9acf68f",
+        "z": "e7e00ee978d3ba17",
+        "g": "6ec657ea73f13536",
         "mongodb": "",
         "name": "Remove",
         "collection": "path",
@@ -1161,10 +1115,10 @@
         "wires": []
     },
     {
-        "id": "a0b46d933046d4ac",
+        "id": "c060942c8eb1324d",
         "type": "mongodb out",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "mongodb": "",
         "name": "Update",
         "collection": "image",
@@ -1172,15 +1126,15 @@
         "upsert": true,
         "multi": false,
         "operation": "update",
-        "x": 1090,
+        "x": 1200,
         "y": 520,
         "wires": []
     },
     {
-        "id": "fc8c9a9a30886365",
+        "id": "3b4bcf8cb5d85e97",
         "type": "mongodb in",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "mongodb": "",
         "name": "Query",
         "collection": "path",
@@ -1189,20 +1143,20 @@
         "y": 320,
         "wires": [
             [
-                "f90b4a11a2dbba5a"
+                "92a43414ebe67856"
             ]
         ]
     },
     {
-        "id": "170342a2c3566121",
+        "id": "ed4aa8e7b7dc9b02",
         "type": "ui_dropdown",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "Aspect",
         "label": "Image aspect",
         "tooltip": "",
         "place": "Select aspect",
-        "group": "81c3a7487f122c15",
+        "group": "aa6698f4de177a5f",
         "order": 7,
         "width": "6",
         "height": "1",
@@ -1233,15 +1187,15 @@
         "y": 980,
         "wires": [
             [
-                "79dde0da2846fcb5"
+                "880e5ac7cb738de5"
             ]
         ]
     },
     {
-        "id": "79dde0da2846fcb5",
+        "id": "880e5ac7cb738de5",
         "type": "function",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "flow.camera",
         "func": "var camera = flow.get(\"camera\");\nswitch(msg.topic) {\n    case \"aspect\":\n        camera.aspect = msg.payload;\n        break;\n    case \"rotation\":\n        camera.rotation = msg.payload;\n        break;\n}\n\nflow.set(\"camera\",camera);\n\nreturn msg;\n",
         "outputs": 1,
@@ -1254,15 +1208,15 @@
         "y": 980,
         "wires": [
             [
-                "453ded03a67edda9"
+                "fc0b1ab7563f0da7"
             ]
         ]
     },
     {
-        "id": "c82271b028db166c",
+        "id": "d8bd419441bad68f",
         "type": "function",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "flow.camera",
         "func": "msg.payload = flow.get(\"camera\") || {\n    aspect: \"16:9\",\n    rotation: \"Landscape\",\n    image: \"\"\n}    \nflow.set(\"camera\",msg.payload);\n\nreturn msg;\n",
         "outputs": 1,
@@ -1275,16 +1229,16 @@
         "y": 980,
         "wires": [
             [
-                "84d519c18d031b46",
-                "fad719b6dc16669c"
+                "67f18e799dff5199",
+                "b98bb15092ccfb27"
             ]
         ]
     },
     {
-        "id": "84d519c18d031b46",
+        "id": "67f18e799dff5199",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "",
         "rules": [
             {
@@ -1304,20 +1258,20 @@
         "y": 980,
         "wires": [
             [
-                "170342a2c3566121"
+                "ed4aa8e7b7dc9b02"
             ]
         ]
     },
     {
-        "id": "0475b8800ca9d45a",
+        "id": "2dfd43a206c929d6",
         "type": "ui_dropdown",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "Rotation",
         "label": "Image rotation",
         "tooltip": "",
         "place": "Select rotation",
-        "group": "81c3a7487f122c15",
+        "group": "aa6698f4de177a5f",
         "order": 8,
         "width": "6",
         "height": "1",
@@ -1343,15 +1297,15 @@
         "y": 1020,
         "wires": [
             [
-                "79dde0da2846fcb5"
+                "880e5ac7cb738de5"
             ]
         ]
     },
     {
-        "id": "fad719b6dc16669c",
+        "id": "b98bb15092ccfb27",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "",
         "rules": [
             {
@@ -1371,47 +1325,47 @@
         "y": 1020,
         "wires": [
             [
-                "0475b8800ca9d45a"
+                "2dfd43a206c929d6"
             ]
         ]
     },
     {
-        "id": "79fceb8c854b03a1",
+        "id": "5f3e417dce2a731e",
         "type": "link in",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "link in 2",
         "links": [
-            "453ded03a67edda9"
+            "fc0b1ab7563f0da7"
         ],
         "x": 355,
         "y": 560,
         "wires": [
             [
-                "f0067c319935f753"
+                "c1ead8be70d916cd"
             ]
         ]
     },
     {
-        "id": "453ded03a67edda9",
+        "id": "fc0b1ab7563f0da7",
         "type": "link out",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "link out 2",
         "mode": "link",
         "links": [
-            "79fceb8c854b03a1"
+            "5f3e417dce2a731e"
         ],
         "x": 1065,
         "y": 980,
         "wires": []
     },
     {
-        "id": "ca4ce8ea6736b676",
+        "id": "fb642bec0ba2f1cd",
         "type": "ui_table",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
-        "group": "8e38503f85f9bb51",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
+        "group": "c503712eb42ad81a",
         "name": "",
         "order": 0,
         "width": "14",
@@ -1474,15 +1428,15 @@
         "y": 360,
         "wires": [
             [
-                "1e4f4a6529c926a3"
+                "0454fa8ce9e33224"
             ]
         ]
     },
     {
-        "id": "f0067c319935f753",
+        "id": "c1ead8be70d916cd",
         "type": "function",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "Resolution",
         "func": "var camera = flow.get(\"camera\");\nif(!camera)\n    return;\n\nswitch( camera.aspect ) {\n    case \"4:3\":\n        msg.resolution = \"800x600\"\n        break;\n    case \"1:1\":\n        msg.resolution = \"800x800\"\n        break;\n    case \"16:9\":\n    default:\n        msg.resolution = \"1280x720\"\n}\n\nreturn msg;",
         "outputs": 1,
@@ -1495,30 +1449,29 @@
         "y": 520,
         "wires": [
             [
-                "44c2d52f18d1a5c4"
+                "cf7c96a415037ce5"
             ]
         ]
     },
     {
-        "id": "29bae567bdcbd3f0",
+        "id": "dcfabc372e3dc197",
         "type": "link out",
-        "z": "b0c955e05631ecea",
-        "g": "5372695db9acf68f",
-        "name": "Path",
+        "z": "e7e00ee978d3ba17",
+        "g": "6ec657ea73f13536",
+        "name": "link out 3",
         "mode": "link",
         "links": [
-            "ed7ef0971c526d9e",
-            "9cb301453293eccd"
+            "c434fc4038a69c01"
         ],
-        "x": 635,
+        "x": 675,
         "y": 140,
         "wires": []
     },
     {
-        "id": "1e4f4a6529c926a3",
+        "id": "0454fa8ce9e33224",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "",
         "rules": [
             {
@@ -1538,29 +1491,29 @@
         "y": 360,
         "wires": [
             [
-                "a04a5aa29bba6026"
+                "4be7183bedd5dbef"
             ]
         ]
     },
     {
-        "id": "a04a5aa29bba6026",
+        "id": "4be7183bedd5dbef",
         "type": "link out",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
+        "z": "e7e00ee978d3ba17",
+        "g": "0e2d668daf0278ba",
         "name": "link out 4",
         "mode": "link",
         "links": [
-            "ed7ef0971c526d9e"
+            "c434fc4038a69c01"
         ],
         "x": 1225,
         "y": 360,
         "wires": []
     },
     {
-        "id": "ae6a171358bb928f",
+        "id": "a1ea8f059a34decd",
         "type": "function",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "name",
         "func": "msg.payload = flow.get(\"name\") || \"\";\nreturn msg;",
         "outputs": 1,
@@ -1573,19 +1526,19 @@
         "y": 740,
         "wires": [
             [
-                "c867081da2da296b"
+                "d756fc37a9bdfdbf"
             ]
         ]
     },
     {
-        "id": "c867081da2da296b",
+        "id": "d756fc37a9bdfdbf",
         "type": "ui_text_input",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "",
         "label": "Name",
         "tooltip": "",
-        "group": "81c3a7487f122c15",
+        "group": "aa6698f4de177a5f",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -1600,15 +1553,15 @@
         "y": 740,
         "wires": [
             [
-                "08ceaa878c40e8e2"
+                "f0bc18daf3fb8b9c"
             ]
         ]
     },
     {
-        "id": "08ceaa878c40e8e2",
+        "id": "f0bc18daf3fb8b9c",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "flow.name",
         "rules": [
             {
@@ -1632,10 +1585,10 @@
         ]
     },
     {
-        "id": "297a9a4f2cc028bc",
+        "id": "35376f79b2d3a2e8",
         "type": "function",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "Confidence",
         "func": "msg.payload = flow.get(\"confidence\") || 10;\nreturn msg;",
         "outputs": 1,
@@ -1648,20 +1601,20 @@
         "y": 780,
         "wires": [
             [
-                "ad534730a187d197"
+                "37840460d19f7213"
             ]
         ]
     },
     {
-        "id": "ad534730a187d197",
+        "id": "37840460d19f7213",
         "type": "ui_dropdown",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "Confidence selection",
         "label": "Min confidence",
         "tooltip": "",
         "place": "Select detection",
-        "group": "81c3a7487f122c15",
+        "group": "aa6698f4de177a5f",
         "order": 5,
         "width": 0,
         "height": 0,
@@ -1722,15 +1675,15 @@
         "y": 780,
         "wires": [
             [
-                "09f27795409780cc"
+                "330956ac1634cf73"
             ]
         ]
     },
     {
-        "id": "09f27795409780cc",
+        "id": "330956ac1634cf73",
         "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
+        "z": "e7e00ee978d3ba17",
+        "g": "cd9a131423c46d3d",
         "name": "flow.confidence",
         "rules": [
             {
@@ -1754,10 +1707,10 @@
         ]
     },
     {
-        "id": "ea2197cb6dc8e677",
+        "id": "025326aff71002bd",
         "type": "mongodb out",
-        "z": "b0c955e05631ecea",
-        "g": "5372695db9acf68f",
+        "z": "e7e00ee978d3ba17",
+        "g": "6ec657ea73f13536",
         "mongodb": "",
         "name": "Insert",
         "collection": "path",
@@ -1765,161 +1718,9 @@
         "upsert": false,
         "multi": false,
         "operation": "store",
-        "x": 670,
+        "x": 710,
         "y": 80,
         "wires": []
-    },
-    {
-        "id": "63545c5c0348f243",
-        "type": "link out",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
-        "name": "Image",
-        "mode": "link",
-        "links": [
-            "a15093f2faccc1f5"
-        ],
-        "x": 1055,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "ddd56fc67f199e8c",
-        "type": "comment",
-        "z": "b0c955e05631ecea",
-        "g": "5372695db9acf68f",
-        "name": "path",
-        "info": "",
-        "x": 710,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "0d39d4fcf809f59c",
-        "type": "comment",
-        "z": "b0c955e05631ecea",
-        "g": "4724ef833182e4e6",
-        "name": "image",
-        "info": "",
-        "x": 1130,
-        "y": 580,
-        "wires": []
-    },
-    {
-        "id": "9c393dc205d6b947",
-        "type": "change",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
-        "name": "flow.retention",
-        "rules": [
-            {
-                "t": "set",
-                "p": "retention",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 920,
-        "y": 1060,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "94f31cb4ba85aeb9",
-        "type": "function",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
-        "name": "retention",
-        "func": "msg.payload = flow.get(\"retention\") || 31;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 400,
-        "y": 1060,
-        "wires": [
-            [
-                "a5cff03ce044ba62"
-            ]
-        ]
-    },
-    {
-        "id": "a5cff03ce044ba62",
-        "type": "ui_dropdown",
-        "z": "b0c955e05631ecea",
-        "g": "17dff4f1d7924cbe",
-        "name": "Retention period",
-        "label": "Retention",
-        "tooltip": "",
-        "place": "Select detection",
-        "group": "81c3a7487f122c15",
-        "order": 9,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "multiple": false,
-        "options": [
-            {
-                "label": "1 day",
-                "value": 1,
-                "type": "num"
-            },
-            {
-                "label": "1 week",
-                "value": 7,
-                "type": "num"
-            },
-            {
-                "label": "2 weeks",
-                "value": 14,
-                "type": "num"
-            },
-            {
-                "label": "1 month",
-                "value": 31,
-                "type": "num"
-            },
-            {
-                "label": "2 months",
-                "value": 61,
-                "type": "num"
-            },
-            {
-                "label": "3 months",
-                "value": 91,
-                "type": "num"
-            },
-            {
-                "label": "6 months",
-                "value": 185,
-                "type": "num"
-            },
-            {
-                "label": "1 year",
-                "value": "365",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 630,
-        "y": 1060,
-        "wires": [
-            [
-                "9c393dc205d6b947"
-            ]
-        ]
     },
     {
         "id": "8851e1ed423632f9",
@@ -1929,10 +1730,10 @@
         "protocol": "http"
     },
     {
-        "id": "8e38503f85f9bb51",
+        "id": "c503712eb42ad81a",
         "type": "ui_group",
         "name": "Table",
-        "tab": "81ec883ec38bb949",
+        "tab": "6551691bcf514348",
         "order": 4,
         "disp": true,
         "width": "14",
@@ -1940,10 +1741,10 @@
         "className": ""
     },
     {
-        "id": "e157e0199999938c",
+        "id": "45db6a3eb8460311",
         "type": "ui_group",
         "name": "Heatmap",
-        "tab": "81ec883ec38bb949",
+        "tab": "6551691bcf514348",
         "order": 1,
         "disp": false,
         "width": "16",
@@ -1951,10 +1752,10 @@
         "className": ""
     },
     {
-        "id": "81c3a7487f122c15",
+        "id": "aa6698f4de177a5f",
         "type": "ui_group",
         "name": "Settings",
-        "tab": "81ec883ec38bb949",
+        "tab": "6551691bcf514348",
         "order": 2,
         "disp": true,
         "width": "6",
@@ -1962,7 +1763,7 @@
         "className": ""
     },
     {
-        "id": "81ec883ec38bb949",
+        "id": "6551691bcf514348",
         "type": "ui_tab",
         "name": "Path Ingestion",
         "icon": "dashboard",
